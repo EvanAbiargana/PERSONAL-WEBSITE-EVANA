@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fantasy;
+}
+
+h1,h2,h3,h4,h5,h6 strong {
+    color:#232e35;
+}
+
+p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li{
+    color: #656d72;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+/* layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 3rem;
+}
+
+/* LOGO DAN NAVMEN */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.logo a {
+    color: #232e35;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #232e35;
+}
+
+/* HERO SECTION */
+#home {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: .5rem 0 1rem;
+    color: #9CAF88;
+}
+
+.hero-right img {
+    border-radius: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+/* TITLES */
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: #656d72;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+
+/* TENTANG SAYA */
+#about_me {
+    background-color: #fbfbfb;
+    padding: 6rem 0;
+}
+
+.about_me .pre-title {
+    margin: 0 auto;
+}
+
+/* PENGALAMAN DAN PENDIDIKAN SAYA */
+#experience_and_education {
+    padding: 6rem 0;
+}
+
+.experience_and_education .pre-title {
+    margin: 0;
+}
+
+/* KETERAMPILAN SAYA */
+#skills {
+    background-color: #fbfbfb;
+    padding: 6rem 0;
+}
+
+.skills .pre-title {
+    margin: 0 auto;
+}
