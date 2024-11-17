@@ -37,7 +37,7 @@ a {
 }
 
 /* layout */
-.grid-3 {
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 3rem;
@@ -67,6 +67,10 @@ a {
     color: #232e35;
 }
 
+.logo a:hover {
+    transform: scale(1.1);
+}
+
 nav ul li {
     display: flex;
     align-items: center;
@@ -76,10 +80,14 @@ nav ul li a {
     color: #232e35;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
 /* HERO SECTION */
 #home {
     height: 720px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -87,7 +95,7 @@ nav ul li a {
     font-size: 3rem;
     font-weight: 700;
     margin: .5rem 0 1rem;
-    color: #9CAF88;
+    color: olive;
 }
 
 .hero-right img {
@@ -96,10 +104,15 @@ nav ul li a {
     justify-content: right;
 }
 
+.hero-left {
+    justify-content: left;
+}
+
 /* TITLES */
 .section-title {
     margin: 1rem 0 4rem;
     font-size: 2rem;
+    color: #CE8946;
 }
 
 .pre-title {
@@ -140,4 +153,8 @@ nav ul li a {
 
 .skills .pre-title {
     margin: 0 auto;
+}
+
+.footer{
+    padding-left: 40px;
 }
