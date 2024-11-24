@@ -99,7 +99,7 @@ nav ul li a:hover {
 }
 
 .hero-right img {
-    border-radius: 10px;
+    border-radius: 50%;
     display: flex;
     justify-content: right;
 }
